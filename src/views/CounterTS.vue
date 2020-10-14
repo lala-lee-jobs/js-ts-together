@@ -5,11 +5,14 @@
   <br/><br/>
   <div>
     {{ state.mountedString }}
-  </div>  
+  </div> 
+  <hr/>
+  <TSComponent /> 
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive, computed,onMounted } from 'vue'
+import TSComponent from '@/components/TSComponent.vue';
 
 interface State {
   count: number
@@ -18,6 +21,9 @@ interface State {
 }
 export default defineComponent({
   name: 'CounterTS',
+  components: {
+    TSComponent,
+  },  
   setup() {
     const state: State = reactive({
       count: 0,

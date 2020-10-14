@@ -6,12 +6,19 @@
   <div>
     {{ state.mountedString }}
   </div>
+  <hr/>
+  <JSComponent />
 </template>
 
 <script>
-import { reactive, computed, onMounted } from 'vue'
+import { reactive, computed, onMounted } from 'vue';
+import JSComponent from '@/components/JSComponent.vue';
 
 export default {
+  name: 'CounterJS',
+  components: {
+    JSComponent
+  },
   setup() {
     const state = reactive({
       count: 0,
