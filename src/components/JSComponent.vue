@@ -1,14 +1,16 @@
 <template>
   <h2>JSComponent</h2>
-  <div>Greeting:{{greeting}}</div><br/>
+  <div>Greeting:{{ greeting }}</div>
+  <br />
   <div>
     <button @click="changeGreeting">Change Greeting</button>
-  </div><br/>
-  <div>Mounted:{{mountedString}}</div>
+  </div>
+  <br />
+  <div>Mounted:{{ mountedString }}</div>
 </template>
 
 <script>
-import { ref, computed, onMounted } from 'vue'
+import { ref, onMounted } from 'vue';
 
 export default {
   name: 'JSComponent',
@@ -27,8 +29,8 @@ export default {
     return {
       greeting,
       changeGreeting,
-      mountedString
+      mountedString,
     };
-  }
-}
+  },
+};
 </script>

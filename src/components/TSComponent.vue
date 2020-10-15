@@ -1,14 +1,16 @@
 <template>
   <h2>TSComponent</h2>
-  <div>Greeting:{{greeting}}</div><br/>
+  <div>Greeting:{{ greeting }}</div>
+  <br />
   <div>
     <button @click="changeGreeting">Change Greeting</button>
-  </div><br/>
-  <div>Mounted:{{mountedString}}</div>
+  </div>
+  <br />
+  <div>Mounted:{{ mountedString }}</div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed, onMounted } from 'vue'
+import { defineComponent, ref, onMounted } from 'vue';
 
 export default defineComponent({
   name: 'TSComponent',
@@ -27,8 +29,8 @@ export default defineComponent({
     return {
       greeting,
       changeGreeting,
-      mountedString
+      mountedString,
     };
-  }
+  },
 });
 </script>

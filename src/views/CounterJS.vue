@@ -2,11 +2,11 @@
   <button @click="increment">
     Count is: {{ state.count }}, double is: {{ state.double }}
   </button>
-  <br/><br/>
+  <br /><br />
   <div>
     {{ state.mountedString }}
   </div>
-  <hr/>
+  <hr />
   <JSComponent />
 </template>
 
@@ -17,7 +17,7 @@ import JSComponent from '@/components/JSComponent.vue';
 export default {
   name: 'CounterJS',
   components: {
-    JSComponent
+    JSComponent,
   },
   setup() {
     const state = reactive({
@@ -27,7 +27,7 @@ export default {
     });
 
     const increment = () => {
-      state.count++
+      state.count++;
     };
 
     onMounted(() => {
@@ -36,8 +36,8 @@ export default {
 
     return {
       state,
-      increment
+      increment,
     };
-  }
-}
+  },
+};
 </script>

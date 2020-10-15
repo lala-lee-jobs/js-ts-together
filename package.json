@@ -54,7 +54,26 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {},
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "eslintIntegration": true,
+          "stylelintIntegration": true,
+          "printWidth": 80,
+          "tabWidth": 2,
+          "useTabs": false,
+          "singleQuote": true,
+          "semi": true,
+          "trailingComma": "all",
+          "bracketSpacing": true,
+          "arrowParens": "always",
+          "requirePragma": false,
+          "insertPragma": false
+        }
+      ],
+      "vue/no-v-html": "off" 
+    },
     "overrides": [
       {
         "files": [

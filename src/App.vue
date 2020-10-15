@@ -2,7 +2,8 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/counter-js">CounterJS</router-link> |
-    <router-link to="/counter-ts">CounterTS</router-link>
+    <router-link to="/counter-ts">CounterTS</router-link> |
+    <router-link to="/book">Book</router-link> |
   </div>
   <router-view />
 </template>
